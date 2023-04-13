@@ -1,0 +1,461 @@
+body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: Space Grotesk;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.background-img{
+  width: 100%;
+  height: 240px;
+  position: relative;
+}
+.cvc-card{
+  position: absolute;
+  top: 45%;
+  right: 12%;
+  font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 9px;
+line-height: 11px;
+text-align: right;
+letter-spacing: 1.28571px;
+text-transform: uppercase;
+
+/* White */
+
+color: #FFFFFF;
+}
+.card-div{
+  position: relative;
+}
+.back{
+  position: absolute;
+  top: 32px;
+  right: 19px;
+}
+.back-card{
+  width: 286px;
+  height: 157px;
+}
+.front{
+  position: absolute;
+  top: 121px;
+  left: 35px;
+}
+.front-card{
+  width: 285px;
+  height: 156px;
+  position: relative;
+  margin-bottom: 48px;
+}
+.text-div{
+  display: flex;
+  flex-direction: column;
+}
+.card-logo{
+  position: absolute;
+  top: 17px;
+  left: 19px;
+  width: 54px;
+  height: 30px;
+  margin-bottom: 37px;
+}
+.card-number{
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  left: 20px;
+  width: 239px;
+  height: 23px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 2.2px;  
+  /* White */
+  color: #FFFFFF;
+}
+.name-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 62%;
+  left: 19px;
+}
+.name{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+
+/* White */
+
+  color: #FFFFFF;
+}
+.date{
+  font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 9px;
+line-height: 11px;
+text-align: right;
+letter-spacing: 1.28571px;
+text-transform: uppercase;
+
+/* White */
+
+color: #FFFFFF;
+margin-left: 124px;
+}
+.input-div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 91px;
+  justify-content: center;
+  align-items: start;
+  margin-left: 40px;
+}
+.cardholder-name{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+  margin-bottom: 9px;
+}
+.eg-tetx{
+  width: 327px;
+  height: 45px;
+  border-radius: 8px;
+  border-color:hsla(278, 3%, 87%, 1) ;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 16px;
+  color: #21092F;
+  margin-bottom: 26px;
+}
+.card-number-input{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+  margin-bottom: 9px;
+}
+.eg-number{
+  width: 327px;
+  height: 45px;
+  border-radius: 8px;
+  border-color:hsla(278, 3%, 87%, 1) ;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 16px;
+  color: #21092F;
+  margin-bottom: 5px;
+}
+.wrong{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF5050;
+  display: none;
+}
+.wrongname{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF5050;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  display: none;
+}
+.cant-blank{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF5050;
+  width: 100px;
+  display: none;
+}
+.cant-blank-cvc{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF5050;
+  display: none;
+
+}
+.last-input-div{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.exp-date{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+  margin-right: 23px;
+  margin-bottom: 9px;
+}
+.born-day{
+  width: 52px;
+  height: 45px;
+  border-radius: 8px;
+  border-color:hsla(278, 3%, 87%, 1) ;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 16px;
+  color: #21092F;
+  margin-right: 8px;
+  
+}
+.real-last-input{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+}
+.born-year{
+  width: 52px;
+  height: 45px;
+  border-radius: 8px;
+  border-color:hsla(278, 3%, 87%, 1) ;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 16px;
+  color: #21092F;
+  margin-right: 11px;
+
+}
+.p-cvc{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+}
+.cvc{
+  width: 164px;
+  height: 45px;
+  border-radius: 8px;
+  border-color:hsla(278, 3%, 87%, 1) ;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 16px;
+  color: #21092F;
+}
+#confrim{
+  width: 350px;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: #21092F;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+#confrim:hover{
+  cursor: pointer;
+}
+.bacground-img-desktop{
+  display: none;
+}
+.error{
+  border: 2px solid  var(--red);
+}
+.error_message{
+  gap: 0;
+}
+.error_message::after{
+  content: "can't be blank";
+  color: var(--red);
+  margin-top: -20px;
+}
+input:focus{
+  outline-color: hsl(249, 99%, 64%);
+}
+.thanks-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0%;
+  left: 40px;
+  display: none;
+  width: 380px;
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.complete-img{
+  
+  margin-left: 140px;
+}
+.thank{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 3.42222px;
+  color: #21092F;
+  margin-top: 35px;
+}
+.card-adder{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #8F8694;
+  margin-bottom: 48px;
+}
+.continue-btn{
+  width: 350px;
+  height: 53px;
+  background-color: hsla(278, 68%, 11%, 1);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+@media(min-width:1024px){
+  body{
+    flex-direction: row;
+  }
+  .background-img{
+    display: none;
+  }
+  .bacground-img-desktop{
+    display: block;
+  }
+  .front-card{
+    width: 447px;
+    height: 245px;
+    left: 28%;
+  }
+  .card-logo{
+    width: 84px;
+    height: 47px;
+    left: 35%;
+    top: 8%;
+    
+  }
+  .card-number{
+    font-family: 'Space Grotesk';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 36px;
+  /* identical to box height */
+  letter-spacing: 3.42222px;
+  /* White */
+   color: #FFFFFF;
+    left: 28%;
+    top: 40%;
+    width: 100%;
+  }
+  .name{
+    font-size: 14px;
+    width: 138px;
+  }
+  .name-div{
+    left: 35%;
+
+  }
+  .date{
+    margin-left: 195px;
+    font-size: 14px;
+  }
+  .back-card{
+    width: 447px;
+    height: 245px;
+  }
+  .back{
+    top: 63%;
+    left: 50%;
+  }
+  .cvc-card{
+    right: -75%;
+    font-size: 14px;
+  }
+  .container{
+    flex-direction: row;
+  }
+  .input-div{
+    margin-left: 350px;
+    margin-top: 120px;
+    display: block;
+  }
+  .thanks-div{
+    display: block;
+    left: 65%;
+    top: 30%;
+    display: none;
+  }
+  .complete-img{
+    margin-left: 140px;
+  }
+  
+
+}
+
