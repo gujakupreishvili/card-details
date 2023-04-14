@@ -6,10 +6,10 @@ let numberInp =document.getElementById("eg-number");
 let cardNumber=document.querySelector(".card-number")
 
 let monthInp = document.getElementById("born-day");
-let cardMonth = document.querySelector(".date")
+let cardMonth = document.querySelector(".month")
 
 let yearInp = document.getElementById("born-year");
-let cardYear =document.querySelector(".date")
+let cardYear =document.querySelector(".year")
 
 let cvcInp =document.getElementById("cvc")
 let  cardCvc =document.querySelector(".cvc-card")
@@ -53,6 +53,7 @@ function handleSubmit(){
   if(!nameInp.value){
    
     wrongName.style.display="block"
+    nameInp.style.borderColor="hsla(0, 100%, 66%, 1)"
     
   }else{
 
@@ -61,6 +62,7 @@ function handleSubmit(){
   if(!numberInp.value){
     
     wrong.style.display="block"
+    numberInp.style.borderColor="hsla(0, 100%, 66%, 1)"
   }else{
     
     wrong.style.display="none"
@@ -68,6 +70,7 @@ function handleSubmit(){
   if(!monthInp.value){
     
     blank.style.display="block"
+    monthInp.style.borderColor="hsla(0, 100%, 66%, 1)"
   }else{
  
     blank.style.display="none"
@@ -75,6 +78,7 @@ function handleSubmit(){
   if(!yearInp.value){
    
     blank.style.display="block"
+    yearInp.style.borderColor="hsla(0, 100%, 66%, 1)"
   }else{
     
     blank.style.display="none"
@@ -82,6 +86,7 @@ function handleSubmit(){
   if(!cvcInp.value){
     
     blankCvc.style.display="block"
+    cvcInp.style.borderColor="hsla(0, 100%, 66%, 1)"
     
   }else{
    
